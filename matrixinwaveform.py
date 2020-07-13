@@ -9,4 +9,4 @@ while(j<n):
     else:
         for i in reversed(range(n)):temp.append(arr[i][j%n])
     j+=1
-for i in range(len(temp)):print(temp[i],end="\t")
+print(*temp)
