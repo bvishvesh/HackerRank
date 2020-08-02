@@ -1,7 +1,7 @@
 """
 Program to print Matrix in Wave Form 
 """
-n,arr,temp,i,j=int(input()),[],[],0,0
+n,arr,temp,j=int(input()),[],[],0
 for _ in range(n):arr.append(list(map(int,input().split())))
 while(j<n):
     if(j%2==0):
