@@ -6,7 +6,7 @@ ar,k=sorted(set(map(int,input().rstrip().split()))),int(input())
 #temp=set([])
 for i in ar:
     if abs(i-k) in ar:
-        print((i,abs(i-k)),end=" ")
+        print((i,abs(i-k)),end="")
 end_time = datetime.datetime.now()
 total=end_time-start_time
 print("{:.3f}".format(total.total_seconds()*1000))
@@ -22,7 +22,7 @@ def binary_search(arr,l,r,x):
         elif arr[mid]<x:
             return binary_search(arr,mid+1,r,x)
         else:
-            return binary_search(arr,l,r,x)
+            return binary_search(arr,l,mid-1,x)
     else:
         return -1
 ar,k=sorted(set(map(int,input().rstrip().split()))),int(input())
